@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.samo_.intentexplicitos_pasardatosentrepantallas.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Número 1:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCifra1"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editCifra1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Número 2:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCifra2"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editCifra2"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdbGrupo">
+
+        <RadioButton
+            android:text="SUMAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbSuma"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:checked="true"/>
+            <!--
+
+            Para que aparezca seleccionado
+            hay que poner: checked="true" en el XML
+
+            -->
+
+        <RadioButton
+            android:text="RESTAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbResta"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="Multiplicación"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbMulti"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="Division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbDiv"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:text="Reiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:id="@+id/btnReiniciar"
+            android:layout_weight="1.00"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="Calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:id="@+id/btnCalcular"
+            android:layout_weight="1.00"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="acumulado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTotal"
+        android:layout_weight="0.15"
+        android:gravity="center_vertical"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecultado"
+        android:layout_weight="0.18"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold" />
+</LinearLayout>

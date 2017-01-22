@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Número 1:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCifra1"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editCifra1Nuevo"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Número 2:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCifra2"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editCifra2Nuevo"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdbGrupoNuevo">
+
+        <RadioButton
+            android:text="SUMAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbSumaNuevo"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:checked="true"/>
+
+        <RadioButton
+            android:text="RESTAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbRestaNuevo"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="Multiplicación"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbMultiNuevo"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold" />
+
+        <RadioButton
+            android:text="Division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbDivNuevo"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:text="Reiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:id="@+id/btnReiniciarNuevo"
+            android:layout_weight="1.00"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="Calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:id="@+id/btnCalcularNuevo"
+            android:layout_weight="1.00"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="acumulado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTotal"
+        android:layout_weight="0.15"
+        android:gravity="center_vertical"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecultadoNuevo"
+        android:layout_weight="0.18"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>
